@@ -1,0 +1,9 @@
+pandas
+numpy
+mlflow
+ensure
+python-box
+notebook
+Flask
+Flask-Cors
+scikit-learn
