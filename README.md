@@ -35,22 +35,22 @@ Each stage is modularized and can be updated independently.
 
 Follow the below sequence to implement or update any part of the ML pipeline:
 
-### 1️⃣ Update `config.yaml`
+### 1️. Update `config.yaml`
 - Define global settings and paths used across the project.
 
-### 2️⃣ Update `schema.yaml`
+### 2. Update `schema.yaml`
 - Specify the expected structure and data types for your dataset (used in data validation).
 
-### 3️⃣ Update `params.yaml`
+### 3️. Update `params.yaml`
 - Define all model and preprocessing hyperparameters for consistency and tuning.
 
-### 4️⃣ Update the **Entity Classes**
+### 4️. Update the **Entity Classes**
 - These define the data models (input/output contracts) used by each component.
 
-### 5️⃣ Update the **Configuration Manager** (`src/config/configuration.py`)
+### 5️. Update the **Configuration Manager** (`src/config/configuration.py`)
 - Reads and parses the YAML files and provides structured configuration to each component.
 
-### 6️⃣ Update the **Pipeline Components**
+### 6️. Update the **Pipeline Components**
 - These include:
   - `data_ingestion.py`
   - `data_validation.py`
@@ -58,10 +58,10 @@ Follow the below sequence to implement or update any part of the ML pipeline:
   - `model_trainer.py`
   - `model_evaluation.py`
 
-### 7️⃣ Update the **Pipeline Orchestration Code**
+### 7️. Update the **Pipeline Orchestration Code**
 - Located in `src/pipeline/`, update the flow logic to include new/modified components.
 
-### 8️⃣ Update `main.py`
+### 8️. Update `main.py`
 - The entry point of the pipeline where all stages are triggered in sequence.
 
 ---
