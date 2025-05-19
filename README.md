@@ -1,12 +1,9 @@
 # End-to-End Data Science Project Workflow 🚀
 
+Built with best practices in mind, the pipeline integrates tools such as MLflow for experiment tracking and DagsHub for version control and collaboration, making it suitable for real-world, scalable applications.
 This repository provides a complete, modular, and production-ready **Machine Learning Pipeline** covering everything from data ingestion to model evaluation using tools like **MLflow** and **DagsHub**.
 
-It is designed with best practices in mind for **scalability**, **reproducibility**, and **collaboration**.
-
----
-
-## 🔧 Project Structure
+## Project Structure
 
 The pipeline includes the following key components:
 
@@ -42,7 +39,7 @@ Follow the below sequence to implement or update any part of the ML pipeline:
 - Specify the expected structure and data types for your dataset (used in data validation).
 
 ### 3️. Update `params.yaml`
-- Define all model and preprocessing hyperparameters for consistency and tuning.
+- Define all model parameters for consistency and tuning.
 
 ### 4️. Update the **Entity Classes**
 - These define the data models (input/output contracts) used by each component.
@@ -66,7 +63,7 @@ Follow the below sequence to implement or update any part of the ML pipeline:
 
 ---
 
-## 🧪 Running the Pipeline
+## Running the Pipeline
 
 ```bash
 python main.py
